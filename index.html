@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samih Ziad Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <div class="background">
+            <div class="header">
+                <div class="headshot">
+                    <a href="/index.html"><img src="/samih-headshot.png" alt=""></a>
+                </div>
+                <div class="nav">
+                    <div class="nav-link "><a class="active"href="/index.html">Home</a></div>
+                    <div class="nav-link"><a href="/about.html">About</a></div>
+                    <div class="nav-link"><a href="/contact.html">Contact</a></div>
+    
+                </div>
+            </div>
+
+            <div class="description-continer">
+                <div class="description">
+                    <h1>Samih Ziad</h1>
+                    <h3>Self-Taught Programmer</h3>
+                    <h3>Chess lover</h3>
+                    <div class="description-icons">
+                        <div class="icon"><a href="https://github.com/supersamih"><img src="./github-100.png" alt=""></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/samih-ziad/"><img src="./linkedin-100.png" alt=""></a></div>
+                    </div>
+                    <img src="./lichess-trimmed.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.icon')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.classList.remove('img-darken')
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samih Ziad Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="background">
+        <div class="header">
+            <div class="headshot">
+                <a href="/index.html"><img src="/samih-headshot.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <div class="nav-link"><a href="/index.html">Home</a></div>
+                <div class="nav-link"><a class="active" href="/about.html">About</a></div>
+                <div class="nav-link"><a href="/contact.html">Contact</a></div>
+            </div>
+        </div>
+    <div class="main"> 
+        <h3>About me</h3>
+        <p>Hello, thanks for visiting my portfolio website. I'm a mechanical engineering graduate who
+            recently fell in love with software development. I started in August 2020 and since then have worked on
+            multiple small projects for myself and for friends. My goal is to land a job in the industry.
+        </p>
+        <div class="boxes">
+            <div class="things">
+                <h3>Skills and Hobbies</h3>
+                <br>
+                <div class="itemswrapper">
+                    <div class="itemwrapper">
+                        <div class="hidden-text">
+                            <div class="icon"><img src="./engineering-96.png" alt=""></div>
+                            Mech-Eng
+                        </div>
+                    </div>
+                    <div class="itemwrapper">
+                        <div class="hidden-text">
+                            <div class="icon"><img src="./python-100.png" alt=""></div>
+                            Python
+                        </div>
+                    </div>
+                    <div class="itemwrapper">
+                        <div class="hidden-text">
+                            <div class="icon"><img src="./html-filetype-100.png" alt=""></div>
+                            HTML
+                        </div>
+                    </div>
+                    <div class="itemwrapper">
+                        <div class="hidden-text">
+                            <div class="icon"><img src="./css-filetype-100.png" alt=""></div>
+                            CSS
+                        </div>
+                    </div>
+                    <div class="itemwrapper">
+                        <div class="hidden-text">
+                            <div class="icon"><img src="./knight-96.png" alt=""></div>
+                            Chess
+                        </div>
+                    </div>
+                    <div class="itemwrapper">
+                        <div class="hidden-text">
+                            <div class="icon"><img src="./reading-96.png" alt=""></div>
+                            Reading
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.itemwrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.classList.remove('img-darken')
+        })
+    })
+</script>
+
+</html>

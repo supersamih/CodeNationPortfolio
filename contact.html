@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samih Ziad Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="background">
+
+    
+        <div class="header">
+            <div class="headshot">
+                <a href="/index.html"><img src="/samih-headshot.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <div class="nav-link"><a href="/index.html">Home</a></div>
+                <div class="nav-link"><a href="/about.html">About</a></div>
+                <div class="nav-link"><a class="active" href="/contact.html">Contact</a></div>
+
+            </div>
+        </div>
+    <div class="main">
+        <div class="contact">
+            <h1>Contact me</h1>
+            <p>I'm always looking for opportnities to improve and better myself!</p>
+            <p>My goal in 2021 is to land a junior software development role. Get in touch by using the form below if
+                you believe there is a space for me in your business</p>
+
+        </div>
+        <br>
+        <div class="form-container">
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="InputName" class="form-label">Name</label>
+                        <input class="form-control" id="InputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="InputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="InputEmail">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="FormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.itemwrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.classList.remove('img-darken')
+        })
+    })
+</script>
+
+</html>
